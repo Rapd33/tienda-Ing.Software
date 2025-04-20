@@ -1,3 +1,3 @@
 # E-Commerce--Ing.Softare
-Proyecto E-Commerce para la materia Ingenieria web I
+Proyecto E-Commerce para la materia Diseño Web
 
