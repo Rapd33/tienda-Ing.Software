@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda Online</title>
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo-mobile"><a href="index.html">Tienda Online</a></h1>
+            <button class="open-menu" id="open-menu" title="Open Menu"><i class="bi bi-list"></i></button>
+        </header>
+        <aside class="sidebar"> 
+            <header class="header">
+                <h1 class="logo"><a href="index.html">Tienda Online</a></h1>
+                <button class="close-menu" id="close-menu" title="Close Menu"><i class="bi bi-x-lg"></i></button>
+            </header>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a id="boton-usuario" href="perfil.html" class="boton-menu boton-usuario"><i class="bi bi-person-circle"></i><span id="nombre-usuario" class="nombre-usuario">Iniciar Sesión</span></a></li>
+                    <li><button id="todos-los-productos" class="boton-menu boton-categorias active"><i class="bi bi-house"></i> Inicio</button></li>
+                    <li><button id="bolsos" class="boton-menu boton-categorias"><i class="bi bi-bag"></i> Bolsos</button></li>
+                    <!-- svg de vela --> 
+                    <li><button id="velas" class="boton-menu boton-categorias"> <svg class="vela-icon" viewBox="0 0 299.416 299.416">
+                        <g>
+                          <path fill="currentColor" d="M220.537,107.712c-0.053-16.681-31.774-23.089-57.458-24.625c7.573-3.76,12.974-10.697,14.616-19.541
+                          c3.495-18.853-15.357-56.24-22.877-61.906c-2.383-1.801-5.243-2.118-7.626-0.953c-1.165,0.583-3.866,2.436-3.866,6.884
+                          c0,12.657-6.567,22.877-12.339,31.88c-4.978,7.732-9.638,15.04-9.638,22.983c0,8.897,5.878,16.628,14.51,20.706
+                          c-25.737,1.589-56.981,7.996-56.981,24.572v166.602c0,19.806,44.484,25.102,70.803,25.102s70.803-5.296,70.803-25.102
+                          L220.537,107.712L220.537,107.712z M141.42,46.176c4.395-6.831,9.532-14.828,12.339-24.519
+                          c6.143,11.703,13.398,30.185,11.65,39.559c-1.006,5.402-5.349,11.65-14.351,12.286c-0.424-0.106-0.9-0.159-1.324-0.159
+                          c-0.477,0-0.953,0.053-1.43,0.159c-7.996-0.477-14.563-5.402-14.563-11.174C133.741,58.092,137.289,52.584,141.42,46.176z
+                           M143.432,95.214v12.498c0,3.442,2.807,6.249,6.249,6.249s6.249-2.807,6.249-6.249V95.214c31.244,0.9,50.468,8.42,52.109,12.498
+                          c-1.695,4.342-23.407,12.604-58.305,12.604c-35.163,0-56.981-8.367-58.358-12.445v-0.053
+                          C92.647,103.74,111.923,96.115,143.432,95.214z M149.681,286.918c-35.269,0-57.087-8.42-58.358-12.604V123.017
+                          c15.146,7.467,40.777,9.797,58.358,9.797c17.529,0,43.213-2.33,58.358-9.797v151.192
+                          C206.769,278.498,184.95,286.918,149.681,286.918z"/>
+                        </g></svg> Velas</button></li>
+                    <li><a class="boton-menu boton-carro" href="compras.html"><i class="bi bi-cart3"></i> Carrito <span id="numero-productos"> 0</span></a></li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <p>© 2025 Tienda Online</p>
+            </footer>
+        </aside>
+        <main>
+
+            <!-- Pop-up de Login/Registro-->
+            <div>
+                <div id="popup-container" class="popup-container disabled"></div>
+            </div>
+
+            <!-- Aqui se agregan los productos de la pagina -->
+            <div>
+                <h2 class="titulo-main">Todos nuestros productos</h2>
+                <div id="container-producto" class="container-producto"></div>
+            </div>
+
+        </main>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="JavaScript/auth.js"></script>
+<script src="JavaScript/app.js"></script>
+<script src="JavaScript/menu.js"></script>
+</html>

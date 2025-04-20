@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda Online</title>
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <header class="header">
+                <h1 class="logo"><a href="index.html">Tienda Online</a></h1>
+            </header>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="perfil.html" class="boton-menu active"><i class="bi bi-person-circle"></i> Mi perfil</a></li>
+                    <li><a href="index.html" class="boton-menu"><i class="bi bi-arrow-return-left"></i> Seguir comprando</a></li>
+                    <li><a href="compras.html" class="boton-menu"><i class="bi bi-cart3"></i> Carrito</a></li>
+                </ul>
+            </nav>
+            <footer class="footer">
+                <p>&copy; 2025 Tienda Online</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-main">Mi perfil</h2>
+            <div class="usuario">
+                <div class="usuario-foto">
+                    <label for="input-foto" class="foto-perfil">
+                        <img id="foto-perfil" src="img/imagen_usuario.webp" alt="Foto de perfil">
+                    </label>
+                    <input type="file" id="input-foto" accept="image/*" class="subir-foto" title="Subir foto de perfil">
+                </div>
+                <div class="usuario-datos-personales">
+                    <h3>Información Personal</h3>
+                    <div></div>
+                </div>
+                <div class="usuario-datos-cuenta">
+                    <h3>Datos de la Cuenta</h3>
+                    <div></div>
+                </div>
+                <div class="usuario-datos-direccion">
+                    <h3>Direcciones</h3>
+                    <div></div>
+                </div>
+                <div class="usuario-datos-pago">
+                    <h3>Métodos de Pago</h3>
+                    <div></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="JavaScript/perfil.js"></script>
+<script src="JavaScript/menu.js"></script>
+</html>
